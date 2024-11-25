@@ -4,12 +4,12 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #ffffff;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #fbfbfb;
     --foreground: #ededed;
   }
 }
@@ -19,3 +19,49 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.embla {
+  overflow: hidden;
+  width: 100%;
+}
+
+.embla__container {
+  display: flex;
+  transition: transform 0.5s ease; /* Smooth transition for sliding */
+}
+
+.embla__slide {
+  flex: 0 0 100%; /* Each slide takes full width */
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  background-size: cover;
+  align-items: center;
+  font-size: 1rem; 
+  font-weight: bold;
+  text-align: center;
+  color: white;
+}
+
+ @media (max-width: 640px) {
+  /* .embla {
+    width: 100%;
+  } */
+
+  .embla__slide {
+   
+    font-size: 10px; 
+   
+  }
+
+ }
+  /* .embla__slide {
+    height: 60vh; Smaller height for mobile view */
+  /* }
+
+  .fixed-top {
+    padding: 1rem;
+  } */
+
+ 
+/* } */
