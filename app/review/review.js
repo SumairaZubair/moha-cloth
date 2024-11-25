@@ -151,12 +151,12 @@ const Review = () => {
         <div className="flex flex-wrap justify-center items-center gap-2 pt-10 p-4 ">
           {policies.map((policy, index) => (
             <div key={index} className="flex items-center">
-              <a
+              <p
                 href={`#${policy.replace(/\s+/g, "-").toLowerCase()}`}
                 className="text-gray-400 hover:underline hover:text-black text-sm"
               >
                 {policy}
-              </a>
+              </p>
               {index < policies.length - 1 && (
                 <span className="text-gray-400 mx-1">|</span>
               )}
@@ -171,15 +171,15 @@ const Review = () => {
       <div className="w-full p-2 lg:text-base text-sm  text-center h-9 mt-10 bg-black ">
           <small className="">
             © 2024,{" "}
-            <a href="/" title="">
+            <p href="/" title="">
               MOHAGNI
-            </a> 
+            </p> 
           </small>
           <small className=" cursor-pointer capitalize">
             <strong > DEVELOPED &amp; MANAGED BY:</strong>{" "}
-            <a href="https://www.ecomatives.com/" >
+            <p href="https://www.ecomatives.com/" >
               <strong className="text-cyan-700">ECOMATIVES</strong>
-            </a>
+            </p>
           </small>
         </div>{" "}
         <div className="p-3 flex items-center justify-center">
