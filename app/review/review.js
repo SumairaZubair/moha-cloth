@@ -168,18 +168,18 @@ const Review = () => {
           <FaInstagram className="text-2xl" />
         </div>
       </div>
-      <div className="w-full p-2 lg:text-base text-sm  text-center h-9 mt-10 bg-black ">
+      <div className="w-full p-2 lg:text-base text-sm  text-center h-13 lg:h-10 mt-10 bg-black ">
           <small className="">
             © 2024,{" "}
-            <p href="/" title="">
+            <span href="/" title="">
               MOHAGNI
-            </p> 
+            </span> 
           </small>
           <small className=" cursor-pointer capitalize">
             <strong > DEVELOPED &amp; MANAGED BY:</strong>{" "}
-            <p href="https://www.ecomatives.com/" >
+            <span href="https://www.ecomatives.com/" >
               <strong className="text-cyan-700">ECOMATIVES</strong>
-            </p>
+            </span>
           </small>
         </div>{" "}
         <div className="p-3 flex items-center justify-center">
